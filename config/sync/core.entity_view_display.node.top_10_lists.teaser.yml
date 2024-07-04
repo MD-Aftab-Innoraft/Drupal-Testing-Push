@@ -1,0 +1,22 @@
+uuid: 7ab724ad-1a2c-4749-b987-f28673e1875b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.top_10_lists.field_movies
+    - node.type.top_10_lists
+  module:
+    - user
+id: node.top_10_lists.teaser
+targetEntityType: node
+bundle: top_10_lists
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movies: true

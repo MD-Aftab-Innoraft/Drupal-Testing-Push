@@ -1,0 +1,60 @@
+uuid: 3aed22be-8cf7-4fa0-b478-be0c43d39638
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home
+    - views.view.recent_list
+  module:
+    - layout_builder
+    - quicktabs
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          eadfc158-7f06-42dc-9171-4d4f07852d21:
+            uuid: eadfc158-7f06-42dc-9171-4d4f07852d21
+            region: first
+            configuration:
+              id: 'views_block:recent_list-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          2ce836c9-1bd4-404e-afa4-4781990af107:
+            uuid: 2ce836c9-1bd4-404e-afa4-4781990af107
+            region: first
+            configuration:
+              id: 'quicktabs_block:news_tabs'
+              label: 'QuickTabs - News Tabs'
+              label_display: '0'
+              provider: quicktabs
+              context_mapping: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

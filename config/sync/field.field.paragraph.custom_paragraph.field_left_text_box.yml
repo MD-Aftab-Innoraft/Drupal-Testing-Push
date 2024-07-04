@@ -1,0 +1,19 @@
+uuid: 2e5694e3-05a7-4af0-91f3-6abc4f8e79dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_text_box
+    - paragraphs.paragraphs_type.custom_paragraph
+id: paragraph.custom_paragraph.field_left_text_box
+field_name: field_left_text_box
+entity_type: paragraph
+bundle: custom_paragraph
+label: 'Left Text Box'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

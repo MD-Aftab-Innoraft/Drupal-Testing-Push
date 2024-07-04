@@ -1,0 +1,9 @@
+uuid: 06876bf8-e113-43cb-b3ee-67050274052a
+langcode: en
+status: true
+dependencies: {  }
+name: News
+vid: news
+description: 'Terms to help categorize news by category.'
+weight: 0
+new_revision: true

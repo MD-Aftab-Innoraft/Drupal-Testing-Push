@@ -1,0 +1,22 @@
+uuid: efdef164-582c-465f-9abf-b4a7aa755c45
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pattern_for_movies
+label: 'Pattern for movies'
+type: 'canonical_entities:node'
+pattern: '/movie/[node:title]'
+selection_criteria:
+  d2f94319-8f35-42b5-a586-77b1d3685db3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d2f94319-8f35-42b5-a586-77b1d3685db3
+    context_mapping:
+      node: node
+    bundles:
+      movie: movie
+selection_logic: and
+weight: -5
+relationships: {  }

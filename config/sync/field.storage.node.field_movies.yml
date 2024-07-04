@@ -1,0 +1,19 @@
+uuid: b8661bc1-92c2-4cab-9f1d-301b375d21e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_movies
+field_name: field_movies
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

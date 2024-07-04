@@ -1,0 +1,12 @@
+uuid: b98cfe77-e075-41e0-9de4-289f55a630bc
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact  Us'
+recipients:
+  - aftabansari1024@gmail.com
+reply: ''
+weight: 0
+message: 'Thank you for reaching out to us.'
+redirect: ''

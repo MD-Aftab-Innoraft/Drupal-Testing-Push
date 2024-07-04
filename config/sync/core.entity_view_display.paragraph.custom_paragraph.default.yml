@@ -1,0 +1,35 @@
+uuid: 5dec8740-0147-4d56-b2dc-c2d826423b0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_paragraph.field_left_text_box
+    - field.field.paragraph.custom_paragraph.field_right_image
+    - image.style.large
+    - paragraphs.paragraphs_type.custom_paragraph
+  module:
+    - image
+id: paragraph.custom_paragraph.default
+targetEntityType: paragraph
+bundle: custom_paragraph
+mode: default
+content:
+  field_left_text_box:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_right_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,28 @@
+uuid: f3a75cd1-a53a-4074-9b71-389659471c6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.top_10_lists.field_movies
+    - node.type.top_10_lists
+  module:
+    - user
+id: node.top_10_lists.default
+targetEntityType: node
+bundle: top_10_lists
+mode: default
+content:
+  field_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

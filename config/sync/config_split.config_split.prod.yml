@@ -1,0 +1,18 @@
+uuid: eb03c011-aca3-4cfc-8cf6-b05dea3a9252
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/split/prod
+module:
+  google_analytics: 0
+theme: {  }
+complete_list:
+  - google_analytics.settings
+partial_list: {  }

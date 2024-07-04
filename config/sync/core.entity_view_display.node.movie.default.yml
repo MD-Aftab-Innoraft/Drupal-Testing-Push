@@ -1,0 +1,255 @@
+uuid: e5e9e2dd-2d19-43dd-bc53-d82b23004479
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.body
+    - field.field.node.movie.field_buy_on_dvd
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_imdb
+    - field.field.node.movie.field_in_cinemas
+    - field.field.node.movie.field_movie_image
+    - field.field.node.movie.field_trailers
+    - node.type.movie
+  module:
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2fba9417-f7a2-4938-aabb-f64bd87ea474:
+            uuid: 2fba9417-f7a2-4938-aabb-f64bd87ea474
+            region: content
+            configuration:
+              id: 'extra_field_block:node:movie:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          a3202bba-c8d7-42e4-90f8-d3271b6c6b90:
+            uuid: a3202bba-c8d7-42e4-90f8-d3271b6c6b90
+            region: content
+            configuration:
+              id: 'field_block:node:movie:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          147899d7-756e-469c-abf2-c2f51e3f58fd:
+            uuid: 147899d7-756e-469c-abf2-c2f51e3f58fd
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_movie_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          64baa888-a494-4798-a598-8e35b05875de:
+            uuid: 64baa888-a494-4798-a598-8e35b05875de
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_trailers'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          ed18978b-f7b9-4c24-a5a7-797ee18034d6:
+            uuid: ed18978b-f7b9-4c24-a5a7-797ee18034d6
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_in_cinemas'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          7def80ed-eb9e-4167-86b3-0187f0415a52:
+            uuid: 7def80ed-eb9e-4167-86b3-0187f0415a52
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_buy_on_dvd'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          1eb15b41-211e-4ef0-8072-f62f419e4cce:
+            uuid: 1eb15b41-211e-4ef0-8072-f62f419e4cce
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_imdb'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          ea081131-4d32-494c-bc26-9d4e805e5df8:
+            uuid: ea081131-4d32-494c-bc26-9d4e805e5df8
+            region: content
+            configuration:
+              id: 'field_block:node:movie:field_genre'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_buy_on_dvd:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_imdb:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_in_cinemas:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_movie_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_trailers:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

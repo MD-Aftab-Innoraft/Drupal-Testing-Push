@@ -1,0 +1,29 @@
+uuid: ffd1c335-2308-4273-979c-e045e0441dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demo_paragraph
+    - node.type.content_type_with_paragraphs
+  module:
+    - entity_reference_revisions
+id: node.content_type_with_paragraphs.field_demo_paragraph
+field_name: field_demo_paragraph
+entity_type: node
+bundle: content_type_with_paragraphs
+label: 'Demo paragraph'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      custom_paragraph:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions
